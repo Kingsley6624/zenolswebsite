@@ -7,7 +7,7 @@ import commercialimg from '../assets/images/commercial.png'
 
 const Ourservices = () => {
   return (
-    <div className='px-[10%] py-16 flex flex-col gap-10'>
+    <div className='px-[10%] py-16 flex flex-col gap-10 items-center'>
       <h2 className='text-center font-semibold text-4xl'>OUR SERVICES</h2>
       <div className='flex flex-col md:flex-row justify-between gap-5'>
       <Card2  
