@@ -26,7 +26,7 @@ const Head = () => {
         <Headcompo
           img={phone}
           text1="Call Us Anytime"
-          text2="+2348100112233"
+          text2="+2348100112234"
           style="font-medium text-2xl text-[#002992]"
         />
         <Button
