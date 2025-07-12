@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import cardimg1 from '../assets/images/Card1.png'
+import cardimg1 from '../assets/images/card1.png'
 
 const Card1 = () => {
   return (
