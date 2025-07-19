@@ -8,15 +8,15 @@ const Herosection = () => {
   return (
     <div>
       <div
-        className="h-[696px] w-full text-white flex flex-col justify-center pt-16 pl-[5%] gap-5"
+        className="h-[696px] w-full text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 items-center md:items-start"
         style={{ backgroundImage: `url(${heroimg})` }}
       >
-        <h2 className="font-bold text-6xl">SAFE AND SECURE</h2>
-        <p className="text-3xl">We are a Service You Can Trust</p>
+        <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl">SAFE AND SECURE</h2>
+        <p className="text-2xl md:text-3xl">We are a Service You Can Trust</p>
         <Button
           onClick={() => navigate("/contact")}
           text="Contact Us Now"
-          style="font-bold text-2xl text-[#ffe248] bg-transparent p-1 border-2 border-[#ffe248] text-nowrap"
+          style="font-bold text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white"
         />
       </div>
     </div>

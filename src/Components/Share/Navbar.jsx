@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "../Head";
 import { NavLink } from "react-router-dom";
-import search from "../../assets/icons/search.svg";
+
 import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
@@ -11,13 +11,13 @@ const Navbar = () => {
     <div className="">
       <Head />
       <nav
-        className="flex justify-center md:justify-between text-white px-[5%]"
+        className="flex justify-center md:justify-between items-center text-white px-[5%]"
         style={{
           background: "linear-gradient(to bottom, #d39c01 8%, #000000 16%)",
         }}
         
       >
-        <ul className="flex gap-6 h-[48px] items-center">
+        <ul className="flex justify-between flex-wrap gap-3 md:justify-start w-full md:gap-6 py-2 items-center">
           <li>
             <NavLink to="/" className="text-[20px] ">
               Home
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="hidden sm:flex">
-          <SearchIcon />
+          <SearchIcon style={{ color: '#ffffff', fontSize: 26 }} />
         </div>
       </nav>
     </div>

@@ -44,25 +44,25 @@ const Contactus = () => {
           <div className="flex gap-2">
             <a
                 href="https://web.facebook.com/profile.php?id=100089172412141"
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all duration-300 hover:scale-105"
               >
                 <FacebookIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all duration-300 hover:scale-105"
               >
                 <XIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all duration-300 hover:scale-105"
               >
                 <InstagramIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-110"
+                className="transition-all duration-300 hover:scale-105"
               >
                 <GoogleIcon fontSize="large" />
               </a>
@@ -109,7 +109,7 @@ const Contactus = () => {
               <Button
                 type="submit"
                 text="Send"
-                style="font-bold text-2xl text-white bg-[#dcb421] py-1 px-10 border-2 border-[#dcb421]"
+                style="font-bold text-2xl text-white bg-[#dcb421] py-1 px-10 border-2 border-[#dcb421] transition-all duration-300 hover:scale-105"
               />
             </div>
           </form>

@@ -23,7 +23,7 @@ const Head = () => {
           text2="Kano, Nigeria"
           style="font-medium text-[#d39c01] text-lg"
         />
-        <Headcompo
+        <Headcompo 
           Icon={<PhoneAndroidIcon style={{ color: '#8B8B8B', fontSize: 40 }} />}
           text1="Call Us Anytime"
           text2="+2348064845313"

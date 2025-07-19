@@ -8,7 +8,7 @@ const Recentproj = () => {
     <div className="flex flex-col items-center px-[5%] py-16 gap-6 w-full">
       <h2 className="text-center font-semibold text-4xl">FEATURED PROJECTS</h2>
       <div className=" justify-between flex flex-col md:flex-row md:items-center gap-5 w-full">
-        <div className="w-[361px] h-[271px]">
+        <div>
           <img src={img1} alt="" />
         </div>
         <div>

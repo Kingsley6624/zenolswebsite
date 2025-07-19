@@ -69,30 +69,30 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <h3 className="font-medium text-2xl">Socials</h3>
             <div className="flex gap-4">
-              <a
-                href="https://web.facebook.com/profile.php?id=100089172412141"
-                className="transition-all duration-300 hover:scale-110"
+              <Link
+                to="https://web.facebook.com/profile.php?id=100089172412141"
+                className="transition-all duration-300 hover:scale-125"
               >
                 <FacebookIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
+              </Link>
+              <Link
+                to=""
+                className="transition-all duration-300 hover:scale-125"
               >
                 <XIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
+              </Link>
+              <Link
+                to=""
+                className="transition-all duration-300 hover:scale-125"
               >
                 <InstagramIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
+              </Link>
+              <Link
+                to=""
+                className="transition-all duration-300 hover:scale-125"
               >
                 <GoogleIcon fontSize="large" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
