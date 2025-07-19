@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import Pagehead from "../Pagehead";
 import bgimage from "../../assets/images/HeroImage2.png";
 import Button from "../Button";
-import face from "../../assets/icons/drkfac.svg";
-import x from "../../assets/icons/drkX.svg";
-import insta from "../../assets/icons/drkinsta.svg";
-import email from "../../assets/icons/drkemail.svg";
+
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const Contactus = () => {
+  const formRef = useRef();
+  const handleSubmit = ()=> formRef.current.rest();
   return (
     <div>
       <Pagehead
@@ -31,39 +34,82 @@ const Contactus = () => {
             <br /> the industry, adipiscing elit. Tortor vel posuere
           </p>
           <div>
-            <p className=" text-center md:text-left">0012, Chiranci Street Kano, Nigeria</p>
-            <p className=" text-center md:text-left">electro@mailservice.com</p>
-            <p className=" text-center md:text-left">+2348100112233</p>
+            <p className=" text-center md:text-left">
+              0012, Chiranci Street Kano, Nigeria
+            </p>
+            <p className=" text-center md:text-left">zonelsengineering@gmail.com</p>
+            <p className=" text-center md:text-left">+2348064845313</p>
           </div>
 
           <div className="flex gap-2">
-            <img src={face} alt="" />
-            <img src={x} alt="" />
-            <img src={insta} alt="" />
-            <img src={email} alt="" />
+            <a
+                href="https://web.facebook.com/profile.php?id=100089172412141"
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <FacebookIcon fontSize="large" />
+              </a>
+              <a
+                href=""
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <XIcon fontSize="large" />
+              </a>
+              <a
+                href=""
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <InstagramIcon fontSize="large" />
+              </a>
+              <a
+                href=""
+                className="transition-all duration-300 hover:scale-110"
+              >
+                <GoogleIcon fontSize="large" />
+              </a>
           </div>
         </div>
         <div className="basis-1/2 flex flex-col">
           <h2 className="text-[#272727] font-bold text-4xl mb-5 self-center md:self-start">
             Send Us a Message
           </h2>
-          <form className=" flex flex-col gap-5" action="">
-            <div className="flex flex-col className='text-xl'">
-              <label htmlFor="">Full Name</label>
-              <input className="p-2 rounded-sm" type="text" />
+          <form
+            className="flex flex-col gap-5"
+            action="https://formspree.io/f/xwpqpnae"
+            method="POST"
+            onSubmit={handleSubmit}
+            ref={formRef}
+          >
+            <div className="flex flex-col text-xl">
+              <label htmlFor="name">Full Name</label>
+              <input
+                className="p-2 rounded-sm"
+                type="text"
+                name="name"
+                required
+              />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="">Email Address</label>
-              <input className="p-2 rounded-sm" type="email" />
+              <label htmlFor="email">Email Address</label>
+              <input
+                className="p-2 rounded-sm"
+                type="email"
+                name="email"
+                required
+              />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="">Message</label>
-              <textarea className="p-2 rounded-sm" name="" id=""></textarea>
+              <label htmlFor="message">Message</label>
+              <textarea
+                className="p-2 rounded-sm"
+                name="message"
+                required
+              ></textarea>
             </div>
             <div className="self-center md:self-start">
               <Button
+                type="submit"
                 text="Send"
-                style="font-bold text-2xl text-white bg-[#002992] py-1 px-10 border-2 border-[#002992]"
+                style="font-bold text-2xl text-white bg-[#dcb421] py-1 px-10 border-2 border-[#dcb421]"
               />
             </div>
           </form>

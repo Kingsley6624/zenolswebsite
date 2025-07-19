@@ -6,9 +6,9 @@ import img3 from "../assets/images/img3.png";
 const Recentproj = () => {
   return (
     <div className="flex flex-col items-center px-[5%] py-16 gap-6 w-full">
-      <h2 className="text-center font-semibold text-4xl">RECENT PROJECTS</h2>
+      <h2 className="text-center font-semibold text-4xl">FEATURED PROJECTS</h2>
       <div className=" justify-between flex flex-col md:flex-row md:items-center gap-5 w-full">
-        <div>
+        <div className="w-[361px] h-[271px]">
           <img src={img1} alt="" />
         </div>
         <div>

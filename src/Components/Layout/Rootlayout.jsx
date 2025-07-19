@@ -5,7 +5,7 @@ import Footer from '../Share/Footer'
 
 const Rootlayout = () => {
   return (
-    <div>
+    <div className='max-w-[1440px]'>
     <Navbar />
     {/* <Head /> */}
     <Outlet />

@@ -35,7 +35,7 @@ about our affordable prices"
         className="px-[20%] py-16 bg-no-repeat bg-cover bg-center relative flex justify-center"
         style={{ backgroundImage: `url(${bgimg2})` }}
       >
-        <div className="absolute inset-0 bg-[#002482] bg-opacity-70 "></div>
+        <div className="absolute inset-0 bg-[#dcb421] bg-opacity-70 "></div>
 
         <div className="flex flex-col items-center relative z-20 text-white gap-5 ">
           <h3 className="font-semibold text-4xl">ALL SERVICES</h3>
@@ -44,8 +44,8 @@ about our affordable prices"
           </p>
           <div className="flex justify-between w-full">
             <div className="flex flex-col gap-5">
-              <h4 className="font-medium text-2xl">Residential Buildings</h4>
-              <ul className="text-xl pl-4">
+              <h4 className="font-medium text-xl md:text-2xl">Residential Buildings</h4>
+              <ul className="text-base pl-4 md:text-xl">
                 <li>Panel Upgrades</li>
                 <li>Breakers and Fuses</li>
                 <li>Code Corrections</li>
@@ -59,8 +59,8 @@ about our affordable prices"
               </ul>
             </div>
             <div className="flex flex-col gap-5">
-              <h4 className="font-medium text-2xl">Commercial Buildings</h4>
-              <ul className="text-xl pl-4">
+              <h4 className="font-medium text-xl md:text-2xl">Commercial Buildings</h4>
+              <ul className="text-base pl-4 md:text-xl">
                 <li>Telecom Installation and Repair</li>
                 <li>Hosted PBX Solutions</li>
                 <li>Outdoor/Parking Lot Lighting</li>
