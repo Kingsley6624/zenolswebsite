@@ -35,7 +35,7 @@ const Contactus = () => {
           </p>
           <div>
             <p className=" text-center md:text-left">
-              0012, Chiranci Street Kano, Nigeria
+              Shop 11, Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State
             </p>
             <p className=" text-center md:text-left">zonelsengineering@gmail.com</p>
             <p className=" text-center md:text-left">+2348064845313</p>
@@ -44,25 +44,25 @@ const Contactus = () => {
           <div className="flex gap-2">
             <a
                 href="https://web.facebook.com/profile.php?id=100089172412141"
-                className="transition-all duration-300 hover:scale-105"
+                className="transition-all duration-300 hover:scale-110"
               >
                 <FacebookIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-105"
+                className="transition-all duration-300 hover:scale-110"
               >
                 <XIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-105"
+                className="transition-all duration-300 hover:scale-110"
               >
                 <InstagramIcon fontSize="large" />
               </a>
               <a
                 href=""
-                className="transition-all duration-300 hover:scale-105"
+                className="transition-all duration-300 hover:scale-110"
               >
                 <GoogleIcon fontSize="large" />
               </a>

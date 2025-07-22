@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex items-center self-center md:self-start">
             <img src={logo} alt="" className="h-full w-[100px]" />
             <span className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">
-              ZENOLS
+              Z0NELS
             </span>
           </div>
           <p className="text-xl">
