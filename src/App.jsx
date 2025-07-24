@@ -7,6 +7,8 @@ import About from './Components/Pages/About'
 import Contactus from './Components/Pages/Contactus'
 import NotFound from './Components/Pages/NotFound'
 import Services from './Components/Pages/Services'
+import ScrollToTop from './Components/ScrollToTop'
+
 
 function App() {
  const router = createBrowserRouter(
@@ -22,7 +24,9 @@ function App() {
   )
 )
   return (
-  <RouterProvider router={router} />
+
+     <RouterProvider router={router} />
+ 
   )
 }
 

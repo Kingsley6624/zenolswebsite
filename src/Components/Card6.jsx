@@ -8,7 +8,7 @@ const Card6 = ({img, role, email, phone, Tname}) => {
   return (
     <div className='flex flex-col gap-2 items-center'>
       <div className='flex flex-col items-center text-[#272727]'>
-        <img src={img} alt="" />
+        <img src={img} alt="" className='h-[230px] w-[232px] rounded-md'/>
         <span className='relative bottom-4 px-5 py-1 rounded-md bg-[#dcb421] text-white'> <p>{role}</p></span>
       </div>
       <h3 className='font-semibold text-xl'>{Tname}</h3>

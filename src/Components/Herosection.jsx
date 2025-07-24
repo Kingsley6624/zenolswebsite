@@ -8,7 +8,7 @@ const Herosection = () => {
   return (
     <div>
       <div
-        className="h-[696px] w-full text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 items-center md:items-start"
+        className="h-[696px] w-full text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 items-center md:items-start bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${heroimg})` }}
       >
         <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl">SAFE AND SECURE</h2>

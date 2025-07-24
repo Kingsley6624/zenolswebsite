@@ -20,7 +20,7 @@ const Contactus = () => {
 
       <div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3797168072056!2d3.313428073503886!3d6.473493623745525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b897771e8f513%3A0x3057663bfe8c92c7!2sUnique%20Estate!5e0!3m2!1sen!2sng!4v1752251058438!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3720778789034!2d7.065468273502033!3d6.2145631266793995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104382ebbba6e309%3A0x38b014d3726c2ed0!2s11%20arthur%20Eze%20Avenue%2C%20Awka%2C%20Anambra!5e0!3m2!1sen!2sng!4v1753345263704!5m2!1sen!2sng"
           className="w-full h-[623px]"
           allowFullScreen=""
           referrerPolicy="no-referrer-when-downgrade"
@@ -30,12 +30,12 @@ const Contactus = () => {
         <div className="basis-1/2 flex flex-col gap-5 items-center md:items-start">
           <h2 className="text-[#272727] font-bold text-4xl">Contact Info</h2>
           <p className=" text-center md:text-left">
-            With over 8 years experience in
-            <br /> the industry, adipiscing elit. Tortor vel posuere
+            Please contact us via email or phone, or visit our office. We are available to help you.
+           
           </p>
           <div>
             <p className=" text-center md:text-left">
-              Shop 11, Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State
+              Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State
             </p>
             <p className=" text-center md:text-left">zonelsengineering@gmail.com</p>
             <p className=" text-center md:text-left">+2348064845313</p>

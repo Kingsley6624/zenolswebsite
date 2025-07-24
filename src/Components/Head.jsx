@@ -19,8 +19,8 @@ const Head = () => {
       <div className="hidden lg:flex items-center gap-5">
         <Headcompo
           Icon={<PlaceIcon style={{ color: '#8B8B8B', fontSize: 40 }} />}
-          text1="Shop 11, Arthur Eze Plaza,"
-          text2="awka Anambra state, Nigeria"
+          text1="Arthur Eze Plaza,Off Igwebuike grammar school,"
+          text2="Awka Anambra state, Nigeria"
           style="font-medium text-[#d39c01] text-lg"
         />
         <Headcompo 
