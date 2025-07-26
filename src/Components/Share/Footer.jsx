@@ -23,9 +23,8 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-xl">
-            With over 8 years experience in the industry, adipiscing elit.
-            Tortor vel posuere <br />
-            <br /> 0012, Chiranci Street Kano, Nigeria electro@mailservice.com
+            Please contact us via email or phone, or visit our office. We are available to help you.<br />
+            <br /> 0012, Chiranci Street Kano, Nigeria support@zonelsengineering.com.ng
             +2348064845313
           </p>
         </div>

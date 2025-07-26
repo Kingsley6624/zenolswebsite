@@ -37,7 +37,7 @@ const Contactus = () => {
             <p className=" text-center md:text-left">
               Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State
             </p>
-            <p className=" text-center md:text-left">zonelsengineering@gmail.com</p>
+            <p className=" text-center md:text-left">support@zonelsengineering.com.ng</p>
             <p className=" text-center md:text-left">+2348064845313</p>
           </div>
 
