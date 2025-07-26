@@ -9,7 +9,7 @@ import logo from '../assets/icons/logoicon.png'
 
 const Head = () => {
   return (
-    <div className="flex justify-between px-[5%] ">
+    <div className="flex justify-between px-[5%] w-full">
           <div className="flex items-center">
         <img src={logo} alt="" className="h-full w-[100px]"/>
         <span className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">

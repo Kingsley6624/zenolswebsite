@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import img from "../../assets/images/footerimg.png";
 import logo from "../../assets/icons/logoicon.png";
@@ -9,6 +9,8 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const formRef = useRef();
+  const handleSubmit = () => formRef.current.rest();
   return (
     <div className="w-full bg-[#ededed] pt-16">
       <div
@@ -23,9 +25,11 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-xl">
-            Please contact us via email or phone, or visit our office. We are available to help you.<br />
-            <br /> 0012, Chiranci Street Kano, Nigeria support@zonelsengineering.com.ng
-            +2348064845313
+            Please contact us via email or phone, or visit our office. We are
+            available to help you.
+            <br />
+            <br /> 0012, Chiranci Street Kano, Nigeria
+            support@zonelsengineering.com.ng +2348064845313
           </p>
         </div>
         <div className="flex flex-col gap-5 md:items-center">
@@ -57,12 +61,18 @@ const Footer = () => {
         <div className="flex flex-col gap-10 lg:gap-16">
           <div className="flex flex-col gap-3 w-fit">
             <h3 className="font-medium text-2xl">Newsletter</h3>
-            <div className="border border-white rounded-md flex flex-nowrap">
-              <input className="p-3 text-black rounded-l-md" type="text" />
+            <form
+              className="border border-white rounded-md flex flex-nowrap"
+              action="https://formspree.io/f/movldrya"
+              method="POST"
+              onSubmit={handleSubmit}
+              ref={formRef}
+            >
+              <input className="p-3 text-black rounded-l-md" type="text" name="email" />
               <button className="bg-[#dcb421]  rounded-r-md p-3">
                 Subscribe
               </button>
-            </div>
+            </form>
           </div>
 
           <div className="flex flex-col gap-3">

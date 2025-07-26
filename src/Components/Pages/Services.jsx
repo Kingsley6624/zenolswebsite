@@ -16,7 +16,7 @@ const Services = () => {
         bgimg={{ backgroundImage: `url(${bgimage})` }}
       />
       <Ourservices />
-      <Offer />
+      {/* <Offer /> */}
       <div className="bg-white flex flex-col md:flex-row justify-between items-center px-[5%] pt-2 mb-8 gap-2 md:gap-0">
         <Download
           img={downloadicon}

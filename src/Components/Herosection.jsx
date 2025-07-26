@@ -4,19 +4,29 @@ import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 import heroimg2 from "../assets/images/Hero2.jpg";
 import heroimg3 from "../assets/images/Hero3.jpg";
+import heroimg4 from "../assets/images/Hero4.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroData = [
-  { heading: "WE ARE ZONELS", text: "Upgrade Your Journey", image: heroimg1 },
+  {
+    heading: "WE ARE ZONELS",
+    text: "Construction, Real Estate, & Electrical Services.",
+    image: heroimg1,
+  },
   {
     heading: "WE ARE EXPERIENCED",
-    text: "Upgrade Your Journey",
+    text: "Refined In Craft, Trusted In Service.",
     image: heroimg2,
   },
   {
     heading: "WE ARE DEDICATED",
-    text: "Upgrade Your Journey",
+    text: "To Building Results That Last & Solutions That Work.",
     image: heroimg3,
+  },
+  {
+    heading: "WE ARE DEDICATED",
+    text: "Rooted in Purpose, Growing with You",
+    image: heroimg4,
   },
 ];
 
@@ -45,33 +55,30 @@ const Herosection = () => {
         style={{ backgroundImage: `url(${heroData[slideIndex].image})` }}
       >
         <div className="absolute inset-0 bg-blue-950 opacity-40"></div>
-        <div className="text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 items-center md:items-start my-auto z-10 text-center md:text-start">
-          
+        <div className="text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 md:gap-20 items-center md:items-start my-auto z-10 text-center md:text-start  w-full md:w-3/5 h-full">
+          <AnimatePresence mode="wait">
+            <motion.div
+              className="flex flex-col  gap-2 md:gap-10 "
+              key={slideIndex}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="font-bold text-l">
+                {heroData[slideIndex].heading}
+              </h2>
+              <p className="text-3xl md:text-5xl">
+                {heroData[slideIndex].text}
+              </p>
+            </motion.div>
+          </AnimatePresence>
 
-<AnimatePresence mode="wait">
-  <motion.div
-    key={slideIndex}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -30 }}
-    transition={{ duration: 0.5 }}
-  >
-    <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl">
-      {heroData[slideIndex].heading}
-    </h2>
-    <p className="text-2xl md:text-3xl">
-      {heroData[slideIndex].text}
-    </p>
-  </motion.div>
-</AnimatePresence>
-        
-  <Button
+          <Button
             onClick={() => navigate("/contact")}
             text="Contact Us Now"
             style="font-bold text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white"
-          /> 
-          
-        
+          />
         </div>
         <div className="mt-12 flex gap-2 self-center py-4 z-10">
           {heroData.map((data, index) => {

@@ -1,13 +1,15 @@
 import React from 'react'
 
-const Card2 = ({img, icon, text}) => {
+const Card2 = ({key, img, head, body}) => {
   return (
-    <div className='h-[276px] rounded-xl bg-no-repeat flex flex-col justify-end' style={{backgroundImage: `url(${img})`}}>
-      <span className='flex justify-center gap-1 bg-[#002992a2] items-center px-24 rounded-b-xl w-full'><img src={icon} alt="" />
-      <p className='text-white'>{text}</p></span>
-
-
-    </div>
+    <div Key={key}
+          className="flex flex-col items-center justify-center gap-4">
+        <img src={img} alt="" />
+        
+        <h2 className=" text-xl  md:text-xl font-bold text-[#333333] font-['Raleway',_sans-serif]">{head}</h2>
+        <p className="text-base text-center font-normal text-[#666666]">{body}</p>
+  
+      </div>
   )
 }
 
