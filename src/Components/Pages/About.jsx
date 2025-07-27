@@ -40,8 +40,8 @@ const About = () => {
           className="bg-no-repeat bg-cover bg-center basis-1/2 min-h-[400px]"
           style={{ backgroundImage: `url(${abtimg})` }}
         ></div>
-        <div className="basis-1/2 flex flex-col gap-3">
-          <h2 className="font-semibold text-4xl">About Us</h2>
+        <div className="basis-1/2 flex flex-col gap-3 items-center">
+          <h2 className="font-semibold text-4xl text-center">About Us</h2>
           <p className="text-xl text-[#272727]">
             At Zenols, we build more than structures we craft solutions that
             shape communities, elevate standards, and empower progress. As a
