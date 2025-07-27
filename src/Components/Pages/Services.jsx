@@ -89,7 +89,7 @@ about our affordable prices"
         className="px-[20%] py-16 bg-no-repeat bg-cover bg-center relative flex justify-center"
         style={{ backgroundImage: `url(${bgimg2})` }}
       >
-        <div className="absolute inset-0 bg-[#dcb421] bg-opacity-70 "></div>
+        <div className="absolute inset-0 bg-[#e54843] bg-opacity-70 "></div>
 
         <div className="flex flex-col items-center relative z-20 text-white gap-5 ">
           <h3 className="font-semibold text-4xl">ALL SERVICES</h3>

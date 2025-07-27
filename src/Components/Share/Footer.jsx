@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="max-w-[382px] w-full flex flex-col gap-3">
           <div className="flex items-center self-center md:self-start">
             <img src={logo} alt="" className="h-full w-[40px] md:w-[100px]" />
-            <span className="font-bold  text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">
+            <span className="font-bold  text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#E8211A] to-[#eb423c]">
               Z0NELS
             </span>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
               ref={formRef}
             >
               <input className="p-3 text-black rounded-l-md" type="text" name="email" />
-              <button className="bg-[#dcb421]  rounded-r-md p-3">
+              <button className="bg-[#E8211A] border-[#E8211A] rounded-r-md p-3">
                 Subscribe
               </button>
             </form>

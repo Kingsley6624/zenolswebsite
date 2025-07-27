@@ -20,7 +20,7 @@ const Navbar = () => {
       >
         <div className="w-full flex justify-between items-center "><div className="flex items-center lg:hidden">
           <img src={logo} alt="" className="h-full w-[40px]" />
-          <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">
+          <span className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-b from-[#E8211A] to-[#eb423c]">
             ZONELS
           </span>
         </div>

@@ -77,7 +77,7 @@ const Herosection = () => {
           <Button
             onClick={() => navigate("/contact")}
             text="Contact Us Now"
-            style="font-bold text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white rounded-md"
+            style="font-bold text-2xl text-[#E8211A] bg-transparent p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-md"
           />
         </div>
         <div className="mt-12 flex gap-2 self-center py-4 z-10">
@@ -87,7 +87,7 @@ const Herosection = () => {
                 key={index}
                 onClick={() => setSlideIndex(index)}
                 className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 
-  ${index === slideIndex && "bg-yellow-400"}
+  ${index === slideIndex && "bg-[#E8211A]"}
   hover:bg-white bg-gray-400`}
               ></span>
             );

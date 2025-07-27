@@ -48,7 +48,7 @@ const Ourservices = () => {
         <Button
           onClick={() => navigate("/services")}
           text="View All"
-          style="font-bold text-l md:text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white rounded-lg rounded-md"
+          style="font-bold text-l md:text-2xl text-[#E8211A] bg-transparent p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-lg rounded-md"
         />
       </div>
       
