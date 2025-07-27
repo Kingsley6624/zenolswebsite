@@ -17,20 +17,21 @@ const Footer = () => {
         className="bg-[#293554] text-white bg-left  bg-no-repeat px-[5%] py-5 grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-4"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className="max-w-[382px] w-full flex flex-col gap-5">
+        <div className="max-w-[382px] w-full flex flex-col gap-3">
           <div className="flex items-center self-center md:self-start">
-            <img src={logo} alt="" className="h-full w-[100px]" />
-            <span className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">
+            <img src={logo} alt="" className="h-full w-[40px] md:w-[100px]" />
+            <span className="font-bold  text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#dcb421] to-[#d39c01]">
               Z0NELS
             </span>
           </div>
-          <p className="text-xl">
-            Please contact us via email or phone, or visit our office. We are
-            available to help you.
-            <br />
-            <br /> 0012, Chiranci Street Kano, Nigeria
-            support@zonelsengineering.com.ng +2348064845313
-          </p>
+          <div className="text-xl flex flex-col gap-3">
+           <p>Please contact us via email or phone, or visit our office. We are
+            available to help you.</p> 
+           
+            <p>Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State.</p>
+            <span>support@zonelsengineering.com.ng</span>
+            <span>+2348064845313</span>
+          </div>
         </div>
         <div className="flex flex-col gap-5 md:items-center">
           <h3 className="font-medium text-2xl mr-5">Explore</h3>
