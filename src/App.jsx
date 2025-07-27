@@ -8,6 +8,7 @@ import Contactus from './Components/Pages/Contactus'
 import NotFound from './Components/Pages/NotFound'
 import Services from './Components/Pages/Services'
 import ScrollToTop from './Components/ScrollToTop'
+import Projects from './Components/Pages/Projects'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Rootlayout />}>
         <Route index element={<Home />} />
+        <Route path='projects' element={<Projects />} />
         <Route path='services' element={<Services />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contactus />} />

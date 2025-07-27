@@ -54,7 +54,7 @@ const Herosection = () => {
         className="h-[330px] md:h-[696px] w-full  bg-no-repeat bg-center bg-cover flex flex-col relative"
         style={{ backgroundImage: `url(${heroData[slideIndex].image})` }}
       >
-        <div className="absolute inset-0 bg-blue-950 opacity-40"></div>
+        <div className="absolute inset-0 bg-blue-950 opacity-30"></div>
         <div className="text-white flex flex-col justify-center pt-16 md:pl-[5%] gap-5 md:gap-20 items-center md:items-start my-auto z-10 text-center md:text-start  w-full md:w-3/5 h-full">
           <AnimatePresence mode="wait">
             <motion.div
@@ -77,7 +77,7 @@ const Herosection = () => {
           <Button
             onClick={() => navigate("/contact")}
             text="Contact Us Now"
-            style="font-bold text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white"
+            style="font-bold text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text- rounded-md"
           />
         </div>
         <div className="mt-12 flex gap-2 self-center py-4 z-10">

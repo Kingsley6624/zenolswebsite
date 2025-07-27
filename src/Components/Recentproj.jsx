@@ -4,8 +4,10 @@ import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.png";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Recentproj = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col items-center px-[5%] py-16 gap-6 w-full">
       <div className="flex justify-between w-full items-center">

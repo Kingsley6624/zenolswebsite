@@ -1,33 +1,36 @@
 import React from "react";
 import Card2 from "./Card2";
 
-import homeimg from "../assets/images/home.png";
-import commercialimg from "../assets/images/commercial.png";
+import realEstate from "../assets/images/realestate.jpg"
+import electrical from "../assets/images/electrical.jpg"
+import construction from "../assets/images/construction.jpg"
+import consultant from "../assets/images/consultant.jpg"
+
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 
 const items = [
   {
     id: 1,
-    img: homeimg,
+    img: construction,
     head: "Building Construction",
     body: "Adding structures to real property, factoring construction costs, project longevity, regulations, and environmental or structural risks.",
   },
   {
     id: 2,
-    img: commercialimg,
+    img: consultant,
     head: "Engineering Consultancy",
     body: "Delivering smart, practical engineering consultancy that turns complex challenges into streamlined solutions across infrastructure, and construction, "
   },
   {
     id: 3,
-    img: commercialimg,
+    img: realEstate,
     head: "Real Estate",
     body: "Integrating structural improvements into real estate while assessing cost, lifespan, regulations, and potential construction or environmental risks.",
   },
   {
     id: 4,
-    img: commercialimg,
+    img: electrical,
     head: "Electrical Services",
     body: "Executing electrical installations and maintenance with focus on safety, efficiency, compliance, and system reliability across environments.",
   },
@@ -45,7 +48,7 @@ const Ourservices = () => {
         <Button
           onClick={() => navigate("/services")}
           text="View All"
-          style="font-bold text-l md:text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white rounded-lg"
+          style="font-bold text-l md:text-2xl text-[#dcb421] bg-transparent p-1 border-2 border-[#dcb421] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#dcb421] hover:text-white rounded-lg rounded-md"
         />
       </div>
       
