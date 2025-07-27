@@ -1,17 +1,16 @@
 import React from "react";
 import Pagehead from "../Pagehead";
 import bgimage from "../../assets/images/HeroImage2.png";
-import Offer from "../Offer";
 import bgimg2 from "../../assets/images/bgimage.png";
 import Download from "../Download";
 import downloadicon from "../../assets/icons/download.svg";
 import priceicon from "../../assets/icons/price.svg";
 import Card2 from "../Card2";
-import commercialimg from "../../assets/images/commercial.png";
-import realEstate from "../../assets/images/realestate.jpg"
-import electrical from "../../assets/images/electrical.jpg"
-import construction from "../../assets/images/construction.jpg"
-import consultant from "../../assets/images/consultant.jpg"
+import realEstate from "../../assets/images/realestate.jpg";
+import electrical from "../../assets/images/electrical.jpg";
+import construction from "../../assets/images/construction.jpg";
+import consultant from "../../assets/images/consultant.jpg";
+import { useNavigate } from "react-router-dom";
 const items = [
   {
     id: 1,
@@ -40,6 +39,8 @@ const items = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#ededed]">
       <Pagehead
@@ -73,12 +74,14 @@ const Services = () => {
       {/* <Offer /> */}
       <div className="bg-white flex flex-col md:flex-row justify-between items-center px-[5%] pt-2 mb-8 gap-2 md:gap-0">
         <Download
+          link={() => navigate('/')}
           img={downloadicon}
           head="Our Brochure"
           text="Download our brochure to know
 more about our services"
         />
         <Download
+        link={() => window.open('https://drive.google.com/file/d/1prIO-wQ7tSDn2sivjh_PFd3NEcC5Tzf-/view?usp=drivesdk', '_blank')}
           img={priceicon}
           head="Price List"
           text="Download our list to know more
@@ -99,36 +102,35 @@ about our affordable prices"
           <div className="flex justify-between w-full">
             <div className="flex flex-col gap-5">
               <h4 className="font-medium text-xl md:text-2xl">
-                Residential Buildings
+                  Electrical Services
               </h4>
               <ul className="text-base pl-4 md:text-xl">
-                <li>Panel Upgrades</li>
-                <li>Breakers and Fuses</li>
-                <li>Code Corrections</li>
+                <li>Electrical System Design and Layout</li>
+                <li>Electrical Testing and Commissioning</li>
                 <li>Outlets, Circuits and Rewiring</li>
                 <li>Indoor and Outdoor Lighting</li>
-                <li>Data/Communication Lines</li>
+                <li>Main Electrical Panel and Distribution Board Installation</li>
                 <li>Landscape Lighting</li>
                 <li>Exhaust Fans</li>
                 <li>Smoke Detectors</li>
-                <li>Home Theater Installation</li>
+                <li>Motors and Transformers</li>
               </ul>
             </div>
             <div className="flex flex-col gap-5">
               <h4 className="font-medium text-xl md:text-2xl">
-                Commercial Buildings
+               Construction Services
               </h4>
               <ul className="text-base pl-4 md:text-xl">
-                <li>Telecom Installation and Repair</li>
-                <li>Hosted PBX Solutions</li>
-                <li>Outdoor/Parking Lot Lighting</li>
-                <li>Outlets, Circuits and Rewiring</li>
-                <li>HID Lighting and Control</li>
-                <li>Lighting Design</li>
-                <li>Motors and Transformers</li>
-                <li>Isolated Computer Circuits</li>
-                <li>Data/Communications Cabling</li>
-                <li>Ballast/Lamp Replacing</li>
+                <li>Site Analysis and Selection</li>
+                <li>Design Consultation and Architectural Design</li>
+                <li>Engineering Services</li>
+                <li>Budget Estimation and Cost Planning</li>
+                <li>Permit Acquisition and Regulatory Approvals</li>
+                <li>Project Planning and Scheduling</li>
+                <li>New Building Construction (Residential, Commercial, Industrial)</li>
+                <li>Renovation and Remodeling</li>
+                <li>Civil and Structural Works</li>
+                <li>Roofing, Waterproofing, and Finishing Works</li>
               </ul>
             </div>
           </div>
