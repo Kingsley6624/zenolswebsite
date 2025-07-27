@@ -109,7 +109,7 @@ const Contactus = () => {
               <Button
                 type="submit"
                 text="Send"
-                style="font-bold text-2xl text-white bg-[#dcb421] py-1 px-10 border-2 border-[#dcb421] transition-all duration-300 hover:scale-105"
+                style="font-bold text-2xl text-white bg-[#E8211A] py-1 px-10 border-2 border-[#E8211A] transition-all duration-300 hover:scale-110 rounded-md"
               />
             </div>
           </form>
