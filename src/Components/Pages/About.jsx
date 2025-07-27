@@ -41,7 +41,7 @@ const About = () => {
           style={{ backgroundImage: `url(${abtimg})` }}
         ></div>
         <div className="basis-1/2 flex flex-col gap-3">
-          <h2 className="font-semibold text-4xl">Welcome to Zonels Engineering Innovations Limited</h2>
+          <h2 className="font-semibold text-4xl">About Us</h2>
           <p className="text-xl text-[#272727]">
             At Zenols, we build more than structures we craft solutions that
             shape communities, elevate standards, and empower progress. As a
