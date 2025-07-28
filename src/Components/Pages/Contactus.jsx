@@ -10,7 +10,27 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 const Contactus = () => {
   const formRef = useRef();
-  const handleSubmit = ()=> formRef.current.rest();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(formRef.current);
+    try {
+      const response = await fetch("https://formspree.io/f/xwpqpnae", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (response.ok) {
+        alert("Thanks for contacting us!");
+        formRef.current.reset();
+      } else {
+        alert("There was an error sending your message.");
+      }
+    } catch (error) {
+      console.error("There was an error sending your message.", error);
+    }
+  };
   return (
     <div>
       <Pagehead
@@ -30,42 +50,36 @@ const Contactus = () => {
         <div className="basis-1/2 flex flex-col gap-5 items-center md:items-start">
           <h2 className="text-[#272727] font-bold text-4xl">Contact Info</h2>
           <p className=" text-center md:text-left">
-            Please contact us via email or phone, or visit our office. We are available to help you.
-           
+            Please contact us via email or phone, or visit our office. We are
+            available to help you.
           </p>
           <div>
             <p className=" text-center md:text-left">
-              Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State
+              Arthur Eze Plaza, Off Igwebuike grammar school,
+              Awka, Anambra State
             </p>
-            <p className=" text-center md:text-left">support@zonelsengineering.com.ng</p>
+            <p className=" text-center md:text-left">
+              support@zonelsengineering.com.ng
+            </p>
             <p className=" text-center md:text-left">+2348064845313</p>
           </div>
 
           <div className="flex gap-2">
             <a
-                href="https://web.facebook.com/profile.php?id=100089172412141"
-                className="transition-all duration-300 hover:scale-110"
-              >
-                <FacebookIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
-              >
-                <XIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
-              >
-                <InstagramIcon fontSize="large" />
-              </a>
-              <a
-                href=""
-                className="transition-all duration-300 hover:scale-110"
-              >
-                <GoogleIcon fontSize="large" />
-              </a>
+              href="https://web.facebook.com/profile.php?id=100089172412141"
+              className="transition-all duration-300 hover:scale-110"
+            >
+              <FacebookIcon fontSize="large" />
+            </a>
+            <a href="" className="transition-all duration-300 hover:scale-110">
+              <XIcon fontSize="large" />
+            </a>
+            <a href="" className="transition-all duration-300 hover:scale-110">
+              <InstagramIcon fontSize="large" />
+            </a>
+            <a href="" className="transition-all duration-300 hover:scale-110">
+              <GoogleIcon fontSize="large" />
+            </a>
           </div>
         </div>
         <div className="basis-1/2 flex flex-col">
@@ -74,8 +88,6 @@ const Contactus = () => {
           </h2>
           <form
             className="flex flex-col gap-5"
-            action="https://formspree.io/f/xwpqpnae"
-            method="POST"
             onSubmit={handleSubmit}
             ref={formRef}
           >

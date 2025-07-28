@@ -10,7 +10,27 @@ import GoogleIcon from "@mui/icons-material/Google";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const formRef = useRef();
-  const handleSubmit = () => formRef.current.rest();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(formRef.current);
+    try {
+      const response = await fetch("https://formspree.io/f/movldrya", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (response.ok) {
+        alert("Thanks for subscribing!");
+        formRef.current.reset();
+      } else {
+        alert("There was an error sending your message.");
+      }
+    } catch (error) {
+      console.error("There was an error sending your message.", error);
+    }
+  };
   return (
     <div className="w-full bg-[#ededed] pt-16">
       <div
@@ -64,8 +84,6 @@ const Footer = () => {
             <h3 className="font-medium text-2xl">Newsletter</h3>
             <form
               className="border border-white rounded-md flex flex-nowrap"
-              action="https://formspree.io/f/movldrya"
-              method="POST"
               onSubmit={handleSubmit}
               ref={formRef}
             >
