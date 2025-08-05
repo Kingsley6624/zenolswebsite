@@ -44,7 +44,7 @@ const Footer = () => {
               Z0NELS
             </span>
           </div>
-          <div className="text-xl flex flex-col gap-3">
+          <div className="text-base flex flex-col gap-3 md:text-xl">
            <p>Please contact us via email or phone, or visit our office. We are
             available to help you.</p> 
            

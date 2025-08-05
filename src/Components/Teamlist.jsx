@@ -39,7 +39,7 @@ const Teamlist = () => {
       id: 4,
       img: team4,
       role: "Accountant",
-      name: "Christiana okpako",
+      name: "Christiana Okpako",
       email: "Christiana.okpako@zonelsengineering.com.ng",
       phone: "+2349060810705",
       link: "mailto:Christiana.okpako@zonelsengineering.com.ng",
