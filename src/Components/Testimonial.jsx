@@ -7,7 +7,7 @@ import img3 from '../assets/images/Ellipse3.png'
 const Testimonial = () => {
   return (
     <div className='bg-[#ededed] px-[5%] flex flex-col gap-5 pt-16'>
-      <h2 className='text-center font-bold text-xl md:text-4xl'>OUR CUSTOMERS SAY</h2>
+      <h2 className='text-center font-bold text-l md:text-4xl'>OUR CUSTOMERS SAY</h2>
       <div className='justify-between  grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-4'>
         <Card4 body='Their service quality was beyond what i expected. Their quality craftsmanship is worth appreciation.' img={img1} cardname='francis ifeanyi' locate='Anambra state.'/>
         <Card4 body='I had a great experience with the professional team of the company. They were kind, professional, on time and within budget.' img={img2} cardname='Crescent chidiebere' locate='Enugu state.'/>

@@ -68,7 +68,7 @@ const Herosection = () => {
               <h2 className="font-bold text-l">
                 {heroData[slideIndex].heading}
               </h2>
-              <p className="text-3xl md:text-5xl">
+              <p className="text-2xl md:text-5xl">
                 {heroData[slideIndex].text}
               </p>
             </motion.div>
@@ -77,7 +77,7 @@ const Herosection = () => {
           <Button
             onClick={() => navigate("/contact")}
             text="Contact Us Now"
-            style="font-bold text-2xl text-[#E8211A] bg-transparent p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-md"
+            style="font-bold text-l md:text-2xl text-[#E8211A] bg-transparent py-0 p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-md"
           />
         </div>
         <div className="mt-12 flex gap-2 self-center py-4 z-10">

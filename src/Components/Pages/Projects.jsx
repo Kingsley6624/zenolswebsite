@@ -8,6 +8,7 @@ import img6 from "../../assets/images/img6.jpg";
 import img7 from "../../assets/images/img8.jpg";
 import img8 from "../../assets/images/img9.jpg";
 import img9 from "../../assets/images/img10.jpg";
+import img10 from "../../assets/images/img11.jpg";
 
 function Projects() {
   return (
@@ -48,6 +49,9 @@ function Projects() {
         <img src={img9} alt="" className=" rounded-md w-full" />
       </div>
 
+      <div className="transition-transform duration-300 hover:scale-110">
+        <img src={img10} alt="" className=" rounded-md w-full" />
+      </div>
     </div>
   );
 }

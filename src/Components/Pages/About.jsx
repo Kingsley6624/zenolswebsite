@@ -41,8 +41,8 @@ const About = () => {
           style={{ backgroundImage: `url(${abtimg})` }}
         ></div>
         <div className="basis-1/2 flex flex-col gap-3 items-center">
-          <h2 className="font-semibold text-4xl text-center">About Us</h2>
-          <p className="text-xl text-[#272727]">
+          <h2 className="font-semibold text-l md:text-4xl text-center">About Us</h2>
+          <p className="text-sm md:text-xl text-[#272727]">
             At Zenols, we build more than structures we craft solutions that
             shape communities, elevate standards, and empower progress. As a
             multidisciplinary firm rooted in integrity and innovation, we bring
@@ -72,8 +72,8 @@ const About = () => {
       </div>
 
       <div className="px-[5%] py-8 items-center bg-white">
-        <h2 className="font-semibold text-4xl text-center ">Our Team</h2>
-        <p className="text-xl text-center">
+        <h2 className="font-semibold  text-l md:text-3xl text-center ">Our Team</h2>
+        <p className="text-sm md:text-xl text-center">
           Meat our professional team members who are ever ready and up to the
           task of assisting you
         </p>

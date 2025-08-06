@@ -54,7 +54,7 @@ const Services = () => {
             OUR SERVICES
           </h2>
         </div>
-        <p className="text-xl text-center md:text-start">
+        <p className="text-sm md:text-xl text-center md:text-start">
           We offer a comprehensive range of cost effective services for
           residential and commercial properties.
         </p>

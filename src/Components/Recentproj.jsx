@@ -11,14 +11,14 @@ const Recentproj = () => {
   return (
     <div className="flex flex-col items-center px-[5%] py-16 gap-6 w-full">
       <div className="flex justify-between w-full items-center">
-        <h2 className="text-center font-bold text-xl md:text-4xl">
+        <h2 className="text-center font-bold text-l md:text-2xl">
           FEATURED PROJECTS
         </h2>
 
         <Button
           onClick={() => navigate("/projects")}
           text="View All"
-          style="font-bold text-l md:text-2xl text-[#E8211A] bg-transparent p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-lg"
+          style="font-bold text-l md:text-2xl text-[#E8211A] bg-transparent py-0 p-1 border-2 border-[#E8211A] text-nowrap transition-all duration-300 hover:scale-105 hover:bg-[#E8211A] hover:text-white rounded-lg"
         />
       </div>
       <div className=" justify-center grid [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] gap-6 w-full items-center">

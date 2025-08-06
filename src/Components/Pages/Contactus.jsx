@@ -48,20 +48,22 @@ const Contactus = () => {
       </div>
       <div className="flex flex-col md:flex-row px-[5%] py-8 bg-[#ededed] gap-10">
         <div className="basis-1/2 flex flex-col gap-5 items-center md:items-start">
-          <h2 className="text-[#272727] font-bold text-4xl">Contact Info</h2>
-          <p className=" text-center md:text-left">
+          <h2 className="text-[#272727] font-bold text-l md:text-3xl">Contact Info</h2>
+          <p className=" text-center md:text-left text-sm md:text-xl">
             Please contact us via email or phone, or visit our office. We are
             available to help you.
           </p>
           <div>
-            <p className=" text-center md:text-left">
+            <p className=" text-center md:text-left text-sm md:text-xl">
               Arthur Eze Plaza, Off Igwebuike grammar school,
               Awka, Anambra State
             </p>
-            <p className=" text-center md:text-left">
+            <p className=" text-center md:text-left text-sm md:text-xl">
               support@zonelsengineering.com.ng
             </p>
-            <p className=" text-center md:text-left">+2348064845313</p>
+            <p className=" text-center md:text-left text-sm md:text-xl">
+              +2348064845313
+            </p>
           </div>
 
           <div className="flex gap-2">
@@ -69,29 +71,29 @@ const Contactus = () => {
               href="https://web.facebook.com/profile.php?id=100089172412141"
               className="transition-all duration-300 hover:scale-110"
             >
-              <FacebookIcon fontSize="large" />
+              <FacebookIcon fontSize="medium" />
             </a>
             <a href="" className="transition-all duration-300 hover:scale-110">
-              <XIcon fontSize="large" />
+              <XIcon fontSize="medium" />
             </a>
             <a href="" className="transition-all duration-300 hover:scale-110">
-              <InstagramIcon fontSize="large" />
+              <InstagramIcon fontSize="medium" />
             </a>
             <a href="" className="transition-all duration-300 hover:scale-110">
-              <GoogleIcon fontSize="large" />
+              <GoogleIcon fontSize="medium" />
             </a>
           </div>
         </div>
         <div className="basis-1/2 flex flex-col">
-          <h2 className="text-[#272727] font-bold text-4xl mb-5 self-center md:self-start">
+          <h2 className="text-[#272727] font-bold text-xl md:text-3xl mb-5 self-center md:self-start">
             Send Us a Message
           </h2>
           <form
-            className="flex flex-col gap-5"
+            className="flex flex-col gap-5 text-sm md:text-xl"
             onSubmit={handleSubmit}
             ref={formRef}
           >
-            <div className="flex flex-col text-xl">
+            <div className="flex flex-col">
               <label htmlFor="name">Full Name</label>
               <input
                 className="p-2 rounded-sm"
@@ -121,7 +123,7 @@ const Contactus = () => {
               <Button
                 type="submit"
                 text="Send"
-                style="font-bold text-2xl text-white bg-[#E8211A] py-1 px-10 border-2 border-[#E8211A] transition-all duration-300 hover:scale-110 rounded-md"
+                style="font-bold text-sm md:text-base text-white bg-[#E8211A] py-1 px-5 md:px-10 border-2 border-[#E8211A] transition-all duration-300 hover:scale-110 rounded-md"
               />
             </div>
           </form>

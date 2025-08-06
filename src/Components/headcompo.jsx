@@ -5,7 +5,7 @@ const Headcompo = ({Icon, text1, text2, style}) => {
     <div className="flex items-center gap-1">
       {Icon}
       <div className="flex flex-col">
-        <span className="text-[#8B8B8B] font-medium text-xl ">{text1}</span>
+        <span className="text-[#8B8B8B] font-medium md:text-xl text-l ">{text1}</span>
         <span className={style}>{text2}</span>
       </div>
     </div>

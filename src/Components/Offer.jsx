@@ -36,8 +36,8 @@ const Offer = () => {
 
   return (
     <div className=" flex flex-col items-center gap-6 py-16 px-[5%]  bg-[#ededed]">
-      <h2 className="text-center font-semibold text-4xl">WE OFFER</h2>
-      <p className="text-xl text-center md:text-start">
+      <h2 className="text-center font-semibold text-l md:text-4xl">WE OFFER</h2>
+      <p className="text-sm text-center md:text-start">
         We offer a comprehensive range of cost effective services for
         residential and commercial properties.
       </p>

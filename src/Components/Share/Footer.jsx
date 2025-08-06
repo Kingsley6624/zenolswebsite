@@ -44,18 +44,23 @@ const Footer = () => {
               Z0NELS
             </span>
           </div>
-          <div className="text-base flex flex-col gap-3 md:text-xl">
-           <p>Please contact us via email or phone, or visit our office. We are
-            available to help you.</p> 
-           
-            <p>Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra State.</p>
+          <div className="text-sm flex flex-col gap-3 md:text-xl">
+            <p>
+              Please contact us via email or phone, or visit our office. We are
+              available to help you.
+            </p>
+
+            <p>
+              Arthur Eze Plaza, Off Igwebuike grammar school, Awka, Anambra
+              State.
+            </p>
             <span>support@zonelsengineering.com.ng</span>
             <span>+2348064845313</span>
           </div>
         </div>
         <div className="flex flex-col gap-5 md:items-center">
-          <h3 className="font-medium text-2xl mr-5">Explore</h3>
-          <ul className="flex flex-col  gap-1 text-xl">
+          <h3 className="font-medium text-l md:text-2xl mr-5">Explore</h3>
+          <ul className="flex flex-col  gap-1 md:text-xl text-l">
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -81,13 +86,17 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-10 lg:gap-16">
           <div className="flex flex-col gap-3 w-fit">
-            <h3 className="font-medium text-2xl">Newsletter</h3>
+            <h3 className="font-medium text-l md:text-2xl">Newsletter</h3>
             <form
               className="border border-white rounded-md flex flex-nowrap"
               onSubmit={handleSubmit}
               ref={formRef}
             >
-              <input className="p-3 text-black rounded-l-md" type="text" name="email" />
+              <input
+                className="p-3 text-black rounded-l-md"
+                type="text"
+                name="email"
+              />
               <button className="bg-[#E8211A] border-[#E8211A] rounded-r-md p-3">
                 Subscribe
               </button>
@@ -95,31 +104,31 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-3">
-            <h3 className="font-medium text-2xl">Socials</h3>
+            <h3 className="font-medium text-l md:text-2xl">Socials</h3>
             <div className="flex gap-4">
               <Link
                 to="https://web.facebook.com/profile.php?id=100089172412141"
                 className="transition-all duration-300 hover:scale-125"
               >
-                <FacebookIcon fontSize="large" />
+                <FacebookIcon fontSize="medium"/>
               </Link>
               <Link
                 to=""
                 className="transition-all duration-300 hover:scale-125"
               >
-                <XIcon fontSize="large" />
+                <XIcon fontSize="medium" />
               </Link>
               <Link
                 to=""
                 className="transition-all duration-300 hover:scale-125"
               >
-                <InstagramIcon fontSize="large" />
+                <InstagramIcon fontSize="medium" />
               </Link>
               <Link
                 to=""
                 className="transition-all duration-300 hover:scale-125"
               >
-                <GoogleIcon fontSize="large" />
+                <GoogleIcon fontSize="medium" />
               </Link>
             </div>
           </div>
