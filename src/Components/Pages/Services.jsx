@@ -89,22 +89,22 @@ about our affordable prices"
         />
       </div>
       <div
-        className="px-[20%] py-16 bg-no-repeat bg-cover bg-center relative flex justify-center"
+        className="md:px-[20%] py-16 bg-no-repeat bg-cover bg-center relative flex justify-center"
         style={{ backgroundImage: `url(${bgimg2})` }}
       >
         <div className="absolute inset-0 bg-[#e54843] bg-opacity-70 "></div>
 
         <div className="flex flex-col items-center relative z-20 text-white gap-5 ">
-          <h3 className="font-semibold text-4xl">ALL SERVICES</h3>
-          <p className="text-xl">
+          <h3 className="font-semibold md:text-4xl text-xl">ALL SERVICES</h3>
+          <p className="md:text-xl text-sm">
             Here a a detailed list of all services we offer
           </p>
           <div className="flex justify-between w-full">
-            <div className="flex flex-col gap-5">
-              <h4 className="font-medium text-xl md:text-2xl">
+            <div className="flex flex-col gap-5 pl-4">
+              <h4 className="font-medium text-l md:text-2xl">
                   Electrical Services
               </h4>
-              <ul className="text-base pl-4 md:text-xl">
+              <ul className="text-sm md:text-xl">
                 <li>Electrical System Design and Layout</li>
                 <li>Electrical Testing and Commissioning</li>
                 <li>Outlets, Circuits and Rewiring</li>
@@ -116,11 +116,11 @@ about our affordable prices"
                 <li>Motors and Transformers</li>
               </ul>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 pl-4">
               <h4 className="font-medium text-xl md:text-2xl">
                Construction Services
               </h4>
-              <ul className="text-base pl-4 md:text-xl">
+              <ul className="text-sm  md:text-xl">
                 <li>Site Analysis and Selection</li>
                 <li>Design Consultation and Architectural Design</li>
                 <li>Engineering Services</li>

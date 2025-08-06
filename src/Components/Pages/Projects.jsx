@@ -17,7 +17,7 @@ function Projects() {
         <img src={img1} alt="" className=" rounded-md w-full" />
       </div>
 
-      <div className="transition-transform duration-300 hover:scale-110">
+      <div className="transition-transform duration-300 hover:scale-95">
         <img src={img2} alt="" className=" rounded-md w-full" />
       </div>
 
@@ -25,7 +25,7 @@ function Projects() {
         <img src={img3} alt="" className=" rounded-md w-full" />
       </div>
 
-      <div className="transition-transform duration-300 hover:scale-110">
+      <div className="transition-transform duration-300 hover:scale-95">
         <img src={img4} alt="" className=" rounded-md w-full" />
       </div>
 
@@ -33,7 +33,7 @@ function Projects() {
         <img src={img5} alt="" className=" rounded-md w-full" />
       </div>
 
-      <div className="transition-transform duration-300 hover:scale-110">
+      <div className="transition-transform duration-300 hover:scale-95">
         <img src={img6} alt="" className=" rounded-md w-full" />
       </div>
 
@@ -41,7 +41,7 @@ function Projects() {
         <img src={img7} alt="" className=" rounded-md w-full" />
       </div>
 
-      <div className="transition-transform duration-300 hover:scale-110">
+      <div className="transition-transform duration-300 hover:scale-95">
         <img src={img8} alt="" className=" rounded-md w-full" />
       </div>
 
@@ -49,7 +49,7 @@ function Projects() {
         <img src={img9} alt="" className=" rounded-md w-full" />
       </div>
 
-      <div className="transition-transform duration-300 hover:scale-110">
+      <div className="transition-transform duration-300 hover:scale-95">
         <img src={img10} alt="" className=" rounded-md w-full" />
       </div>
     </div>
