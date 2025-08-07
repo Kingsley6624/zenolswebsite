@@ -117,7 +117,7 @@ about our affordable prices"
               </ul>
             </div>
             <div className="flex flex-col gap-5 pl-4">
-              <h4 className="font-medium text-xl md:text-2xl">
+              <h4 className="font-medium text-l md:text-2xl">
                Construction Services
               </h4>
               <ul className="text-sm  md:text-xl">
